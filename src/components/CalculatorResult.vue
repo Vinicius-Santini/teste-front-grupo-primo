@@ -51,32 +51,45 @@ const props = defineProps({
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EEEEEE;
+    background-color: var(--secondary-application-color);
     border-radius: 16px;
-    color: #21211F;
+    color: var(--highlighted-text-color);
     font-weight: 600;
+
+    @media (max-width: 1024px) {
+        width: 90%;
+    }
 
     .calculator-result-container {
         width: 94%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding-top: 44px;
+        padding-top: 4vh;
 
         .calculator-result-title {
             font-weight: 700;
             font-size: 40px;
-            margin-bottom: 60px;
+            margin-bottom: 5vh;
+
+            @media (max-width: 1024px) {
+                font-size: 20px;
+            }
         }
 
         .calculator-result-period {
             font-size: 32px;
             margin-bottom: 12px;
+            color: #3A3A3A;
+
+            @media (max-width: 1024px) {
+                font-size: 18px;
+            }
         }
 
         .divider {
             width: 100%;
-            border-top: 5px solid #33E5B0;
+            border-top: 5px solid var(--green-highlight-color);
             margin: 28px 0 28px 0;
         }
 
@@ -84,18 +97,27 @@ const props = defineProps({
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin: 32px 0 32px 0;
+            margin: 3vh 0 3vh 0;
 
             .calculator-result-rate-content {
                 display: flex;
                 align-items: center;
-                margin-bottom: 32px;
+                margin-bottom: 3vh;
+
+                @media (max-width: 1024px) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
 
                 .calculator-result-rate-name {
                     font-size: 17px;
                     letter-spacing: 4px;
-                    text-align: center;
                     line-height: 19px;
+
+                    @media (max-width: 1024px) {
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
                 }
 
                 .calculator-result-rate-value {
@@ -104,6 +126,13 @@ const props = defineProps({
                     padding-left: 8px;
                     text-align: center;
                     line-height: 32px;
+
+                    @media (max-width: 1024px) {
+                        padding-top: 10px;
+                        padding-left: 0px;
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
                 }
             }
         }
@@ -116,10 +145,20 @@ const props = defineProps({
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            text-align: justify;
+
+            @media (max-width: 1024px) {
+                font-size: 14px;
+            }
 
             .calculator-result-help-content {
                 display: flex;
                 align-items: center;
+
+                @media (max-width: 1024px) {
+                    align-items: flex-start;
+                    margin-right: 20px;
+                }
 
                 img {
                     width: 32px;
@@ -130,6 +169,10 @@ const props = defineProps({
 
             .calculator-result-help-date {
                 margin: 20px 0 0 40px;
+
+                @media (max-width: 1024px) {
+                    margin: 20px 40px 0 52px;
+                }
             }
         }
     }

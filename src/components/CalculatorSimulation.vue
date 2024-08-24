@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 
 const initialInvestment = defineModel('initialInvestment')
 const monthlyInvestment = defineModel('monthlyInvestment')
@@ -20,8 +19,7 @@ const emit = defineEmits(['send-simulation-data'])
                     <label for="initial-investment">
                         Investimento inicial
                     </label>
-                    <input v-model="initialInvestment" id="initial-investment" type="number" data-type="currency"
-                        placeholder="R$ 0,00">
+                    <input v-model="initialInvestment" id="initial-investment" type="number" placeholder="R$ 0,00">
                 </div>
                 <div class="calculator-simulation-input-wrapper">
                     <label for="monthly-investment">
@@ -51,9 +49,9 @@ const emit = defineEmits(['send-simulation-data'])
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EEEEEE;
+    background-color: var(--secondary-application-color);
     border-radius: 16px;
-    color: #595855;
+    color: var(--primary-text-color);
     font-weight: 400;
     text-align: justify;
 
@@ -62,7 +60,7 @@ const emit = defineEmits(['send-simulation-data'])
     }
 
     .calculator-simulation-container {
-        width: 92%;
+        width: 90%;
         height: 80%;
         display: flex;
         flex-direction: column;
@@ -77,7 +75,7 @@ const emit = defineEmits(['send-simulation-data'])
         .calculator-simulation-title {
             font-weight: 600;
             font-size: 33px;
-            color: #21211F;
+            color: var(--highlighted-text-color);
             margin-bottom: 16px;
 
             @media (max-width: 1024px) {
@@ -103,6 +101,7 @@ const emit = defineEmits(['send-simulation-data'])
             @media (max-width: 1024px) {
                 flex-direction: column;
                 margin-top: 44px;
+                width: 100%;
             }
 
             .calculator-simulation-input-wrapper {
@@ -120,24 +119,25 @@ const emit = defineEmits(['send-simulation-data'])
                     font-size: 22px;
                     padding-bottom: 8px;
 
-                    @media (max-width: 1024px) {
+                    @media (max-width: 1440px) {
                         font-size: 16px;
                     }
                 }
 
                 input {
-                    width: 20em;
+                    width: 22vw;
                     height: 60px;
                     padding-left: 12px;
                     background-color: #FFFFFF;
                     border-radius: 12px;
                     border: 2px solid #DDDCE0;
-                    color: #595855;
+                    color: var(--primary-text-color);
                     font-size: 22px;
 
                     @media (max-width: 1024px) {
-                        width: 95%;
+                        width: 100%;
                         margin-bottom: 32px;
+                        padding-left: 0px;
                     }
                 }
 
@@ -164,6 +164,7 @@ const emit = defineEmits(['send-simulation-data'])
 
             @media (max-width: 1024px) {
                 margin-top: 20px;
+                justify-content: flex-start;
             }
 
             button {
@@ -171,8 +172,8 @@ const emit = defineEmits(['send-simulation-data'])
                 height: 3em;
                 margin-right: 12px;
                 border-radius: 16px;
-                background-color: #33E5B0;
-                color: #21211F;
+                background-color: var(--green-highlight-color);
+                color: var(--highlighted-text-color);
                 font-weight: 600;
                 font-size: 25px;
 

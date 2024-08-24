@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid var(--secondary-application-color);
 
     @media (max-width: 1024px) {
         font-size: 85px;

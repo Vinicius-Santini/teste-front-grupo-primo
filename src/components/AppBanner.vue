@@ -54,7 +54,7 @@
             font-weight: 400;
             font-size: 24px;
             line-height: 28px;
-            color: #BFBDB6;
+            color: var(--banner-title-color);
 
             @media (max-width: 1024px) {
                 font-size: 13px;

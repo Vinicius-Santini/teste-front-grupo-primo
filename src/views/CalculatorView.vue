@@ -29,12 +29,12 @@ function handleSimulationData(initialInvestment, monthlyInvestment, investmentTi
     <AppHeader />
     <div v-if="!selicProfitability || !arcaProfitability">
         <AppBanner />
-        <div class="calculator-wrapper">
+        <div class="calculator-simulation-component-wrapper">
             <CalculatorSimulation @send-simulation-data="handleSimulationData" />
         </div>
     </div>
     <div v-else>
-        <div class="calculator-wrapper2">
+        <div class="calculator-result-component-wrapper">
             <CalculatorResult :investment-period=investmentPeriod :selic-profitability=selicProfitability
                 :arca-profitability=arcaProfitability />
         </div>
@@ -42,18 +42,26 @@ function handleSimulationData(initialInvestment, monthlyInvestment, investmentTi
 </template>
 
 <style>
-.calculator-wrapper {
-    padding: 80px 120px 80px 120px;
+.calculator-simulation-component-wrapper {
+    padding: 7vh 6vw 7vh 6vw;
 
     @media (max-width: 1024px) {
         width: 100%;
+        min-height: 728px;
         display: flex;
         justify-content: center;
-        padding: 28px 0 0 0;
+        padding: 4vh 0 18vh 0;
     }
 }
 
-.calculator-wrapper2 {
-    padding: 56px;
+.calculator-result-component-wrapper {
+    padding: 3vw;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+        padding: 4vh 0 24vh 0;
+        display: flex;
+        justify-content: center;
+    }
 }
 </style>
