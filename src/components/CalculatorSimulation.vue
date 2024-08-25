@@ -35,8 +35,8 @@ const emit = defineEmits(['send-simulation-data'])
                 </div>
             </div>
             <div class="calculator-simulation-button-wrapper">
-                <button
-                    @click="emit('send-simulation-data', initialInvestment, monthlyInvestment, investmentTime) ">Calcular<img
+                <button @click="emit('send-simulation-data', initialInvestment, monthlyInvestment, investmentTime)"
+                    :disabled="(!initialInvestment && !monthlyInvestment) || !investmentTime">Calcular<img
                         src="../assets/arrow_right_alt.svg" /></button>
             </div>
         </div>
@@ -185,6 +185,11 @@ const emit = defineEmits(['send-simulation-data'])
                 img {
                     margin-left: 20px;
                 }
+            }
+
+            button:disabled,
+            button[disabled] {
+                opacity: 0.5;
             }
         }
     }

@@ -1,15 +1,15 @@
 <script setup>
-// const props = defineProps([
-//     bannerTitle: String,
-//     bannerDescription: String
-// ])
+const props = defineProps({
+    bannerTitle: String,
+    bannerDescription: String
+})
 </script>
 
 <template>
     <div class="banner-wrapper">
         <div class="banner-content-wrapper">
-            <div class="banner-content-title">Simulador de investimento</div>
-            <div class="banner-content-description">Descubra o quanto você pode economizar.</div>
+            <h1 class="banner-content-title">{{bannerTitle}}</h1>
+            <div class="banner-content-description">{{bannerDescription}}</div>
         </div>
     </div>
 </template>

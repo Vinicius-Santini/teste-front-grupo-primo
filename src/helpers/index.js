@@ -2,7 +2,7 @@ export function convertToBrl(value) {
     return value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
 }
 
-export function calculateInvestment(mainAmount, monthlyAmount = 0, years, yieldRate) {
+export function calculateInvestment(mainAmount = 0, monthlyAmount = 0, years, yieldRate) {
     const workDaysPeriod = years * 252
     const decimalYieldRate = yieldRate / 100.0
 

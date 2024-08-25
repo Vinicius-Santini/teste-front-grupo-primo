@@ -2,23 +2,23 @@
 import { convertToBrl } from "../helpers/index.js"
 
 const props = defineProps({
-    icon: String,
+    logoPath: String,
     title: String,
     profitability: Number
 })
 
 function getLogoUrl() {
-    return new URL(`../assets/${props.icon}`, import.meta.url)
+    return new URL(`../assets/${props.logoPath}`, import.meta.url)
 }
 </script>
 
 <template>
     <div class="calculator-result-card-wrapper">
-        <img>
         <div class="calculator-result-card-container">
-            <img v-if="icon" :src="getLogoUrl()" class="calculator-result-card-logo" />
-            <div class="calculator-result-card-title">{{ title }}</div>
-            <div class="calculator-result-card-value">{{ convertToBrl(profitability) }}</div>
+            <img v-if="logoPath" :src="getLogoUrl()" class="calculator-result-card-logo" :aria-label=logoPath />
+            <h3 class="calculator-result-card-title">{{ title }}</h3>
+            <div data-testid="profitability-result-element" class="calculator-result-card-value">{{
+                convertToBrl(profitability) }}</div>
         </div>
     </div>
 </template>

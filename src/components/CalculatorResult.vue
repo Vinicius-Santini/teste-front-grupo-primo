@@ -13,14 +13,14 @@ const props = defineProps({
 <template>
     <div class="calculator-result-wrapper">
         <div class="calculator-result-container">
-            <div class="calculator-result-title">
+            <h1 class="calculator-result-title">
                 Resultado:
-            </div>
+            </h1>
             <div class="calculator-result-period">
                 Em {{ investmentPeriod }} meses você teria:
             </div>
             <CalculatorResultCard title="TAXA SELIC" :profitability=selicProfitability />
-            <CalculatorResultCard icon="logo-arca.svg" title="FUNDO ARCA" :profitability=arcaProfitability />
+            <CalculatorResultCard logoPath="logo-arca.svg" title="FUNDO ARCA" :profitability=arcaProfitability />
             <div class="divider"></div>
             <div class="calculator-result-rates-wrapper">
                 <div class="calculator-result-rate-content">

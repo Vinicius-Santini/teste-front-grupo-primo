@@ -11,24 +11,24 @@ import { selic, arca } from "../utils/yieldRates.js"
 
 const selicProfitability = ref(null);
 const arcaProfitability = ref(null);
-const investmentPeriod = ref(null);
+const investmentPeriodInMonths = ref(null);
 
 function handleSimulationData(initialInvestment, monthlyInvestment, investmentTime) {
-    if (initialInvestment && investmentTime) {
-        if (!monthlyInvestment) {
-            monthlyInvestment = 0
-        }
-        investmentPeriod.value = investmentTime * 12
+    if ((initialInvestment || monthlyInvestment) && investmentTime) {
+        investmentPeriodInMonths.value = investmentTime * 12
         selicProfitability.value = calculateInvestment(initialInvestment, monthlyInvestment, investmentTime, selic)
         arcaProfitability.value = calculateInvestment(initialInvestment, monthlyInvestment, investmentTime, arca)
     }
 }
+
+const calculatorBannerTitle = "Simulador de investimento"
+const calculatorBannerDescription = "Descubra o quanto você pode economizar."
 </script>
 
 <template>
     <AppHeader />
     <div v-if="!selicProfitability || !arcaProfitability">
-        <AppBanner />
+        <AppBanner :bannerTitle=calculatorBannerTitle :bannerDescription=calculatorBannerDescription />
         <div class="calculator-simulation-component-wrapper">
             <CalculatorSimulation @send-simulation-data="handleSimulationData" />
         </div>
