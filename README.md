@@ -25,9 +25,11 @@ src/
 └── views/
 ```
 **`assets/`**
+
 Diretório destinado a armazenar recursos estáticos, como imagens e logos, que são utilizados na aplicação. Este diretório serve como um ponto centralizado para esses arquivos, facilitando o acesso e a manutenção.
 
 **`components/`**
+
 Diretório que contém todos os componentes Vue da aplicação. A abordagem utilizada aqui é a de um diretório 'flat', ou seja, sem subpastas para componentes, facilitando a navegação e organização.
 
 **Regras para nomenclatura de componentes:**
@@ -39,9 +41,11 @@ Diretório que contém todos os componentes Vue da aplicação. A abordagem util
 * **Estrutura de nomes:** Iniciar o nome com as palavras mais gerais e terminar com as específicas.
 
 **`helpers/`**
+
 Contém funções utilitárias que podem ser reutilizadas em várias partes do projeto. Atualmente, todas as funções estão em um único arquivo `index.js`. Conforme o projeto cresce, é recomendado dividir essas funções em diferentes arquivos para melhor organização.
 
 **`tests/`**
+
 Diretório onde estão localizados todos os testes da aplicação. A estrutura é segmentada para facilitar o entendimento:
 
 Testes funcionais: Estão na raiz da pasta e recebem o nome da funcionalidade que estão testando, como Calculator.test.js.
