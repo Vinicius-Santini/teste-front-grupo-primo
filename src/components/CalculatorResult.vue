@@ -67,6 +67,10 @@ const props = defineProps({
         align-items: flex-start;
         padding-top: 4vh;
 
+        @media (max-width: 1024px) {
+            width: 90%;
+        }
+
         .calculator-result-title {
             font-weight: 700;
             font-size: 2.5rem;
