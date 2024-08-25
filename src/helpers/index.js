@@ -23,3 +23,20 @@ function monthlyInvestmentProfitabilityCalculation(monthlyAmount, decimalYieldRa
 
     return (monthlyYieldRatePlusOne ** months - 1) * monthlyAmount / monthlyYieldRate
 }
+
+export function makeCurrencyMask(unamaskedValue) {
+    const onlyDigits = unamaskedValue
+        .split("")
+        .filter(s => /\d/.test(s))
+        .join("")
+        .padStart(3, "0")
+    const digitsFloat = onlyDigits.slice(0, -2) + "." + onlyDigits.slice(-2)
+    return formatAsBrl(digitsFloat)
+}
+
+function formatAsBrl(value, locale = 'pt-BR', currency = 'BRL') {
+    return new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency
+    }).format(value)
+}

@@ -69,21 +69,21 @@ const props = defineProps({
 
         .calculator-result-title {
             font-weight: 700;
-            font-size: 40px;
+            font-size: 2.5rem;
             margin-bottom: 5vh;
 
             @media (max-width: 1024px) {
-                font-size: 20px;
+                font-size: 2rem;
             }
         }
 
         .calculator-result-period {
-            font-size: 32px;
+            font-size: 2rem;
             margin-bottom: 12px;
             color: #3A3A3A;
 
             @media (max-width: 1024px) {
-                font-size: 18px;
+                font-size: 1.125rem;
             }
         }
 
@@ -110,19 +110,19 @@ const props = defineProps({
                 }
 
                 .calculator-result-rate-name {
-                    font-size: 17px;
+                    font-size: 1.0625;
                     letter-spacing: 4px;
                     line-height: 19px;
 
                     @media (max-width: 1024px) {
-                        font-size: 16px;
+                        font-size: 1rem;
                         line-height: 18px;
                     }
                 }
 
                 .calculator-result-rate-value {
                     font-weight: 800;
-                    font-size: 24px;
+                    font-size: 1.5rem;
                     padding-left: 8px;
                     text-align: center;
                     line-height: 32px;
@@ -130,7 +130,7 @@ const props = defineProps({
                     @media (max-width: 1024px) {
                         padding-top: 10px;
                         padding-left: 0px;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                         line-height: 24px;
                     }
                 }
@@ -139,7 +139,7 @@ const props = defineProps({
 
         .calculator-result-help-wrapper {
             font-weight: 400;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: #6A6A6A;
             padding-bottom: 48px;
             display: flex;
@@ -148,7 +148,7 @@ const props = defineProps({
             text-align: justify;
 
             @media (max-width: 1024px) {
-                font-size: 14px;
+                font-size: 0.875rem;
             }
 
             .calculator-result-help-content {

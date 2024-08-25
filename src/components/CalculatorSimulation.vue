@@ -1,7 +1,14 @@
 <script setup>
+import CalculatorSimulationCurrencyInput from './CalculatorSimulationCurrencyInput.vue';
+
 const initialInvestment = defineModel('initialInvestment')
 const monthlyInvestment = defineModel('monthlyInvestment')
 const investmentTime = defineModel('investmentTime')
+
+function calculateSpanDistance() {
+    const spanBaseDistance = window.innerWidth > 1024 ? 20 : 10
+    return spanBaseDistance + (12 * investmentTime.value.toString().length) + 'px'
+}
 
 const emit = defineEmits(['send-simulation-data'])
 </script>
@@ -18,19 +25,24 @@ const emit = defineEmits(['send-simulation-data'])
                     <label for="initial-investment">
                         Investimento inicial
                     </label>
-                    <input v-model="initialInvestment" id="initial-investment" type="number" placeholder="R$ 0,00">
+                    <CalculatorSimulationCurrencyInput id="initial-investment" v-model="initialInvestment" />
                 </div>
                 <div class="calculator-simulation-input-wrapper">
                     <label for="monthly-investment">
                         Investimento mensal
                     </label>
-                    <input v-model="monthlyInvestment" id="monthly-investment" type="number" placeholder="R$ 0,00">
+                    <CalculatorSimulationCurrencyInput id="monthly-investment" v-model="monthlyInvestment" />
                 </div>
                 <div class="calculator-simulation-input-wrapper">
                     <label for="investment-time">
                         Quanto tempo deixaria seu dinheiro investido?
                     </label>
-                    <input v-model="investmentTime" id="investment-time" type="number" placeholder="1 ano">
+                    <div class="calculator-simulation-input-time-wrapper">
+                        <input id="investment-time" v-model="investmentTime" type="number" placeholder="1 ano">
+                        <span v-if="investmentTime && investmentTime < 2">ano</span>
+                        <span :style="{'left': calculateSpanDistance()}"
+                            v-else-if="investmentTime && investmentTime > 1">anos</span>
+                    </div>
                 </div>
             </div>
             <div class="calculator-simulation-button-wrapper">
@@ -64,7 +76,7 @@ const emit = defineEmits(['send-simulation-data'])
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        padding: 44px 0 44px 0;
+        padding: 4vh 0 4vh 0;
 
         @media (max-width: 1024px) {
             height: 94%;
@@ -73,20 +85,20 @@ const emit = defineEmits(['send-simulation-data'])
 
         .calculator-simulation-title {
             font-weight: 600;
-            font-size: 33px;
+            font-size: 2rem;
             color: var(--highlighted-text-color);
             margin-bottom: 16px;
 
             @media (max-width: 1024px) {
-                font-size: 20px;
+                font-size: 1.25rem;
             }
         }
 
         .calculator-simulation-description {
-            font-size: 25px;
+            font-size: 1.5625rem;
 
             @media (max-width: 1024px) {
-                font-size: 16px;
+                font-size: 1rem;
             }
         }
 
@@ -95,7 +107,7 @@ const emit = defineEmits(['send-simulation-data'])
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 9.2vh;
 
             @media (max-width: 1024px) {
                 flex-direction: column;
@@ -115,29 +127,51 @@ const emit = defineEmits(['send-simulation-data'])
                 }
 
                 label {
-                    font-size: 22px;
+                    font-size: 1.375rem;
                     padding-bottom: 8px;
 
                     @media (max-width: 1440px) {
-                        font-size: 16px;
+                        font-size: 1rem;
                     }
                 }
 
-                input {
-                    width: 22vw;
-                    height: 60px;
-                    padding-left: 12px;
-                    background-color: #FFFFFF;
-                    border-radius: 12px;
-                    border: 2px solid #DDDCE0;
-                    color: var(--primary-text-color);
-                    font-size: 22px;
+                .calculator-simulation-input-time-wrapper {
+                    position: relative;
 
                     @media (max-width: 1024px) {
                         width: 100%;
-                        margin-bottom: 32px;
-                        padding-left: 0px;
+                        align-items: flex-start;
                     }
+
+                    input {
+                        width: 22vw;
+                        height: 60px;
+                        padding-left: 12px;
+                        background-color: #FFFFFF;
+                        border-radius: 12px;
+                        border: 2px solid #DDDCE0;
+                        color: var(--primary-text-color);
+                        font-size: 1.375rem;
+
+                        @media (max-width: 1024px) {
+                            width: 100%;
+                            margin-bottom: 32px;
+                            padding-left: 0px;
+                        }
+                    }
+
+                    span {
+                        position: absolute;
+                        left: 30px;
+                        color: var(--primary-text-color);
+                        font-size: 1.375rem;
+                        top: 14px;
+
+                        @media (max-width: 1024px) {
+                            left: 20px;
+                        }
+                    }
+
                 }
 
                 input::-webkit-outer-spin-button,
@@ -147,7 +181,7 @@ const emit = defineEmits(['send-simulation-data'])
                 }
 
                 ::placeholder {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     color: #BEBEBE;
                 }
             }
@@ -157,7 +191,7 @@ const emit = defineEmits(['send-simulation-data'])
 
         .calculator-simulation-button-wrapper {
             width: 100%;
-            margin-top: 124px;
+            margin-top: 10vh;
             display: flex;
             justify-content: flex-end;
 
@@ -174,7 +208,7 @@ const emit = defineEmits(['send-simulation-data'])
                 background-color: var(--green-highlight-color);
                 color: var(--highlighted-text-color);
                 font-weight: 600;
-                font-size: 25px;
+                font-size: 1.5625rem;
 
                 @media (max-width: 1024px) {
                     width: 100%;

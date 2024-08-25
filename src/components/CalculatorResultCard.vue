@@ -58,23 +58,23 @@ function getLogoUrl() {
         }
 
         .calculator-result-card-title {
-            font-size: 16px;
+            font-size: 1rem;
             margin-bottom: 4px;
             color: var(--primary-text-color);
             letter-spacing: 4px;
 
             @media (max-width: 1024px) {
-                font-size: 14px;
+                font-size: 0.875rem;
             }
         }
 
         .calculator-result-card-value {
-            font-size: 88px;
+            font-size: 5.5rem;
             line-height: 96px;
             padding-bottom: 4vh;
 
             @media (max-width: 1024px) {
-                font-size: 32px;
+                font-size: 2rem;
                 line-height: 40px;
                 padding-bottom: 4vh;
             }

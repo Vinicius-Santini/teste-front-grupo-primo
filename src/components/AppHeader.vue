@@ -15,10 +15,6 @@
     justify-content: center;
     border-bottom: 1px solid var(--secondary-application-color);
 
-    @media (max-width: 1024px) {
-        font-size: 85px;
-    }
-
     .header-logo-wrapper {
         width: 90%;
         display: flex;

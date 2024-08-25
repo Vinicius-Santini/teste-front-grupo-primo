@@ -68,7 +68,7 @@ exports[`App should render correctly 1`] = `
                   <input
                     id="initial-investment"
                     placeholder="R$ 0,00"
-                    type="number"
+                    type="text"
                   />
                 </div>
                 <div
@@ -82,7 +82,7 @@ exports[`App should render correctly 1`] = `
                   <input
                     id="monthly-investment"
                     placeholder="R$ 0,00"
-                    type="number"
+                    type="text"
                   />
                 </div>
                 <div
@@ -93,11 +93,16 @@ exports[`App should render correctly 1`] = `
                   >
                      Quanto tempo deixaria seu dinheiro investido? 
                   </label>
-                  <input
-                    id="investment-time"
-                    placeholder="1 ano"
-                    type="number"
-                  />
+                  <div
+                    class="calculator-simulation-input-time-wrapper"
+                  >
+                    <input
+                      id="investment-time"
+                      placeholder="1 ano"
+                      type="number"
+                    />
+                    <!--v-if-->
+                  </div>
                 </div>
               </div>
               <div
@@ -184,7 +189,7 @@ exports[`App should render correctly 1`] = `
                 <input
                   id="initial-investment"
                   placeholder="R$ 0,00"
-                  type="number"
+                  type="text"
                 />
               </div>
               <div
@@ -198,7 +203,7 @@ exports[`App should render correctly 1`] = `
                 <input
                   id="monthly-investment"
                   placeholder="R$ 0,00"
-                  type="number"
+                  type="text"
                 />
               </div>
               <div
@@ -209,11 +214,16 @@ exports[`App should render correctly 1`] = `
                 >
                    Quanto tempo deixaria seu dinheiro investido? 
                 </label>
-                <input
-                  id="investment-time"
-                  placeholder="1 ano"
-                  type="number"
-                />
+                <div
+                  class="calculator-simulation-input-time-wrapper"
+                >
+                  <input
+                    id="investment-time"
+                    placeholder="1 ano"
+                    type="number"
+                  />
+                  <!--v-if-->
+                </div>
               </div>
             </div>
             <div

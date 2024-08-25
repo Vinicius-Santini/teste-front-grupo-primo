@@ -35,7 +35,7 @@ const calculatorBannerDescription = "Descubra o quanto você pode economizar."
     </div>
     <div v-else>
         <div class="calculator-result-component-wrapper">
-            <CalculatorResult :investment-period=investmentPeriod :selic-profitability=selicProfitability
+            <CalculatorResult :investment-period=investmentPeriodInMonths :selic-profitability=selicProfitability
                 :arca-profitability=arcaProfitability />
         </div>
     </div>

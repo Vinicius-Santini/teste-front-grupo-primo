@@ -1,52 +1,20 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`CalculatorResultCard should render correctly 1`] = `
+exports[`CalculatorSimulationCurrencyInput should render correctly 1`] = `
 {
   "baseElement": <body>
     <div>
-      <div
-        class="calculator-result-card-wrapper"
-      >
-        <div
-          class="calculator-result-card-container"
-        >
-          <!--v-if-->
-          <h3
-            class="calculator-result-card-title"
-          >
-            TAXA SELIC
-          </h3>
-          <div
-            class="calculator-result-card-value"
-            data-testid="profitability-result-element"
-          >
-            R$ 1.000,00
-          </div>
-        </div>
-      </div>
+      <input
+        placeholder="R$ 0,00"
+        type="text"
+      />
     </div>
   </body>,
   "container": <div>
-    <div
-      class="calculator-result-card-wrapper"
-    >
-      <div
-        class="calculator-result-card-container"
-      >
-        <!--v-if-->
-        <h3
-          class="calculator-result-card-title"
-        >
-          TAXA SELIC
-        </h3>
-        <div
-          class="calculator-result-card-value"
-          data-testid="profitability-result-element"
-        >
-          R$ 1.000,00
-        </div>
-      </div>
-    </div>
+    <input
+      placeholder="R$ 0,00"
+      type="text"
+    />
   </div>,
   "debug": [Function],
   "emitted": [Function],

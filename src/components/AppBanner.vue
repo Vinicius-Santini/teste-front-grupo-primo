@@ -37,13 +37,13 @@ const props = defineProps({
 
         .banner-content-title {
             font-weight: 800;
-            font-size: 48px;
+            font-size: 3rem;
             line-height: 58px;
             color: #FFFFFC;
             margin-bottom: 24px;
 
             @media (max-width: 1024px) {
-                font-size: 26px;
+                font-size: 1.625rem;
                 text-align: left;
                 line-height: 30px;
                 margin-bottom: 16px;
@@ -52,12 +52,12 @@ const props = defineProps({
 
         .banner-content-description {
             font-weight: 400;
-            font-size: 24px;
+            font-size: 1.5rem;
             line-height: 28px;
             color: var(--banner-title-color);
 
             @media (max-width: 1024px) {
-                font-size: 13px;
+                font-size: 0.8125rem;
             }
         }
     }

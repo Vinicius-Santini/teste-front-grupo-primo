@@ -12,12 +12,12 @@ test("Simulation filling out all fields correctly for happy path", async () => {
     const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
 
     await user.clear(initialInvestmentInput);
-    await user.type(initialInvestmentInput, "1000");
+    await user.type(initialInvestmentInput, "100000");
 
     const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
 
     await user.clear(monthlyInvestmentInput);
-    await user.type(monthlyInvestmentInput, "200");
+    await user.type(monthlyInvestmentInput, "20000");
 
 
     const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
@@ -45,7 +45,7 @@ test("Simulation not filling out just monthly investment for happy path", async 
     const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
 
     await user.clear(initialInvestmentInput);
-    await user.type(initialInvestmentInput, "1000");
+    await user.type(initialInvestmentInput, "100000");
 
     const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
 
@@ -81,7 +81,7 @@ test("Simulation not filling out just main investment for happy path", async () 
     const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
 
     await user.clear(monthlyInvestmentInput);
-    await user.type(monthlyInvestmentInput, "200");
+    await user.type(monthlyInvestmentInput, "20000");
 
 
     const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
@@ -109,12 +109,12 @@ test("Simulation not filling out investment time should not render result", asyn
     const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
 
     await user.clear(initialInvestmentInput);
-    await user.type(initialInvestmentInput, "1000");
+    await user.type(initialInvestmentInput, "100000");
 
     const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
 
     await user.clear(monthlyInvestmentInput);
-    await user.type(monthlyInvestmentInput, "200");
+    await user.type(monthlyInvestmentInput, "20000");
 
     const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
 
