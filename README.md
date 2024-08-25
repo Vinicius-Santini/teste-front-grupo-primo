@@ -1,5 +1,7 @@
 # Calculadora de Investimentos
 
+![ViteVue-GoogleChrome2024-08-2519-32-59-ezgif com-crop](https://github.com/user-attachments/assets/0234a2e7-7a41-4311-bca5-e0b687c20ba1)
+
 ## Como rodar o projeto
 
 1. **Instalação de dependências**:
