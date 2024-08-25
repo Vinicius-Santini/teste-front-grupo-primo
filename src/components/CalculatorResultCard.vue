@@ -17,7 +17,7 @@ function getLogoUrl() {
         <div class="calculator-result-card-container">
             <img v-if="logoPath" :src="getLogoUrl()" class="calculator-result-card-logo" :aria-label=logoPath />
             <h3 class="calculator-result-card-title">{{ title }}</h3>
-            <div data-testid="profitability-result-element" class="calculator-result-card-value">{{
+            <div class="calculator-result-card-value">{{
                 convertToBrl(profitability) }}</div>
         </div>
     </div>

@@ -15,12 +15,8 @@ test("Card should render heading with the name passed in title prop", async () =
 test("Card should render profitability with the value passed in profitability prop as BRL", async () => {
     render(CalculatorResultCard, { props: { title: "TAXA SELIC", profitability: 5000.0 } });
 
-    const value = 5000.0
-    const brlValue = value.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
-
-    const profitabilityElement = await screen.getByTestId('profitability-result-element')
-
-    expect(profitabilityElement.textContent).toBe(brlValue);
+    const profitabilityElement = screen.getByText("R$ 5.000,00");
+    expect(profitabilityElement).toBeInTheDocument();
 });
 
 test("Card should render img element if logoPath prop is passed", async () => {
