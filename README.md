@@ -8,7 +8,7 @@ Para rodar os testes deve-se utilizar o comando `$ npm run test`.
 ## Estrutura do projeto:
 Este projeto foi desenvolvido utilizando VueJs e JavaScript, abaixo você verá mais detalhes sobre a organização do projeto
 
-Esta é a estrutura da source do projeto
+Esta é a estrutura da **source** do projeto
 
 ![image](https://github.com/user-attachments/assets/eb97bfdf-dea8-4ff6-8338-6f3a9ca27c04)
 
