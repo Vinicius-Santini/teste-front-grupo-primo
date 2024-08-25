@@ -87,12 +87,6 @@ const props = defineProps({
             }
         }
 
-        .divider {
-            width: 100%;
-            border-top: 5px solid var(--green-highlight-color);
-            margin: 28px 0 28px 0;
-        }
-
         .calculator-result-rates-wrapper {
             display: flex;
             flex-direction: column;

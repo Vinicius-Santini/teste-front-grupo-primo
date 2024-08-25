@@ -40,6 +40,29 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+input {
+  width: 22vw;
+  height: 60px;
+  padding-left: 12px;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  border: 2px solid #DDDCE0;
+  color: var(--primary-text-color);
+  font-size: 1.375rem;
+
+  @media (max-width: 1024px) {
+    width: 96%;
+    margin-bottom: 32px;
+    padding-left: 10px;
+  }
+}
+
+.divider {
+  width: 100%;
+  border-top: 5px solid var(--green-highlight-color);
+  margin: 28px 0 28px 0;
+}
+
 #app {
   width: 100vw;
   margin: 0 auto;

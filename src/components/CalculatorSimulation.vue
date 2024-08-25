@@ -21,23 +21,23 @@ const emit = defineEmits(['send-simulation-data'])
                 fácil
                 e intuitiva:</div>
             <div class="calculator-simulation-inputs-wrapper">
-                <div class="calculator-simulation-input-wrapper">
+                <div class="calculator-simulation-inputs-content">
                     <label for="initial-investment">
                         Investimento inicial
                     </label>
                     <CalculatorSimulationCurrencyInput id="initial-investment" v-model="initialInvestment" />
                 </div>
-                <div class="calculator-simulation-input-wrapper">
+                <div class="calculator-simulation-inputs-content">
                     <label for="monthly-investment">
                         Investimento mensal
                     </label>
                     <CalculatorSimulationCurrencyInput id="monthly-investment" v-model="monthlyInvestment" />
                 </div>
-                <div class="calculator-simulation-input-wrapper">
+                <div class="calculator-simulation-inputs-content">
                     <label for="investment-time">
                         Quanto tempo deixaria seu dinheiro investido?
                     </label>
-                    <div class="calculator-simulation-input-time-wrapper">
+                    <div class="calculator-simulation-inputs-content-time-input-wrapper">
                         <input id="investment-time" v-model="investmentTime" type="number" placeholder="1 ano">
                         <span v-if="investmentTime && investmentTime < 2">ano</span>
                         <span :style="{'left': calculateSpanDistance()}"
@@ -116,7 +116,7 @@ const emit = defineEmits(['send-simulation-data'])
                 width: 100%;
             }
 
-            .calculator-simulation-input-wrapper {
+            .calculator-simulation-inputs-content {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -136,29 +136,12 @@ const emit = defineEmits(['send-simulation-data'])
                     }
                 }
 
-                .calculator-simulation-input-time-wrapper {
+                .calculator-simulation-inputs-content-time-input-wrapper {
                     position: relative;
 
                     @media (max-width: 1024px) {
                         width: 100%;
                         align-items: flex-start;
-                    }
-
-                    input {
-                        width: 22vw;
-                        height: 60px;
-                        padding-left: 12px;
-                        background-color: #FFFFFF;
-                        border-radius: 12px;
-                        border: 2px solid #DDDCE0;
-                        color: var(--primary-text-color);
-                        font-size: 1.375rem;
-
-                        @media (max-width: 1024px) {
-                            width: 96%;
-                            margin-bottom: 32px;
-                            padding-left: 10px;
-                        }
                     }
 
                     span {
