@@ -1,5 +1,7 @@
 # Calculadora de Investimentos
 
+![teste-front-grupo-primo](https://github.com/user-attachments/assets/28540c40-3284-4828-8917-777554ff52f7)
+
 ## Como rodar o projeto
 
 1. **Instalação de dependências**:
