@@ -1,0 +1,581 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Calculator should render correctly 1`] = `
+{
+  "baseElement": <body>
+    <div>
+      
+      <div
+        class="header-wrapper"
+      >
+        <div
+          class="header-logo-wrapper"
+        >
+          <img
+            src="/src/assets/logo-grupo-primo.svg"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="banner-wrapper"
+        >
+          <div
+            class="banner-content-wrapper"
+          >
+            <h1
+              class="banner-content-title"
+            >
+              Simulador de investimento
+            </h1>
+            <div
+              class="banner-content-description"
+            >
+              Descubra o quanto você pode economizar.
+            </div>
+          </div>
+        </div>
+        <div
+          class="calculator-simulation-component-wrapper"
+        >
+          <div
+            class="calculator-simulation-wrapper"
+          >
+            <div
+              class="calculator-simulation-container"
+            >
+              <div
+                class="calculator-simulation-title"
+              >
+                Simule agora
+              </div>
+              <div
+                class="calculator-simulation-description"
+              >
+                Faça uma comparação e comece a investir em uma experiência fácil e intuitiva:
+              </div>
+              <div
+                class="calculator-simulation-inputs-wrapper"
+              >
+                <div
+                  class="calculator-simulation-input-wrapper"
+                >
+                  <label
+                    for="initial-investment"
+                  >
+                     Investimento inicial 
+                  </label>
+                  <input
+                    id="initial-investment"
+                    placeholder="R$ 0,00"
+                    type="number"
+                  />
+                </div>
+                <div
+                  class="calculator-simulation-input-wrapper"
+                >
+                  <label
+                    for="monthly-investment"
+                  >
+                     Investimento mensal 
+                  </label>
+                  <input
+                    id="monthly-investment"
+                    placeholder="R$ 0,00"
+                    type="number"
+                  />
+                </div>
+                <div
+                  class="calculator-simulation-input-wrapper"
+                >
+                  <label
+                    for="investment-time"
+                  >
+                     Quanto tempo deixaria seu dinheiro investido? 
+                  </label>
+                  <input
+                    id="investment-time"
+                    placeholder="1 ano"
+                    type="number"
+                  />
+                </div>
+              </div>
+              <div
+                class="calculator-simulation-button-wrapper"
+              >
+                <button
+                  disabled=""
+                >
+                  Calcular
+                  <img
+                    src="/src/assets/arrow_right_alt.svg"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>,
+  "container": <div>
+    
+    <div
+      class="header-wrapper"
+    >
+      <div
+        class="header-logo-wrapper"
+      >
+        <img
+          src="/src/assets/logo-grupo-primo.svg"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        class="banner-wrapper"
+      >
+        <div
+          class="banner-content-wrapper"
+        >
+          <h1
+            class="banner-content-title"
+          >
+            Simulador de investimento
+          </h1>
+          <div
+            class="banner-content-description"
+          >
+            Descubra o quanto você pode economizar.
+          </div>
+        </div>
+      </div>
+      <div
+        class="calculator-simulation-component-wrapper"
+      >
+        <div
+          class="calculator-simulation-wrapper"
+        >
+          <div
+            class="calculator-simulation-container"
+          >
+            <div
+              class="calculator-simulation-title"
+            >
+              Simule agora
+            </div>
+            <div
+              class="calculator-simulation-description"
+            >
+              Faça uma comparação e comece a investir em uma experiência fácil e intuitiva:
+            </div>
+            <div
+              class="calculator-simulation-inputs-wrapper"
+            >
+              <div
+                class="calculator-simulation-input-wrapper"
+              >
+                <label
+                  for="initial-investment"
+                >
+                   Investimento inicial 
+                </label>
+                <input
+                  id="initial-investment"
+                  placeholder="R$ 0,00"
+                  type="number"
+                />
+              </div>
+              <div
+                class="calculator-simulation-input-wrapper"
+              >
+                <label
+                  for="monthly-investment"
+                >
+                   Investimento mensal 
+                </label>
+                <input
+                  id="monthly-investment"
+                  placeholder="R$ 0,00"
+                  type="number"
+                />
+              </div>
+              <div
+                class="calculator-simulation-input-wrapper"
+              >
+                <label
+                  for="investment-time"
+                >
+                   Quanto tempo deixaria seu dinheiro investido? 
+                </label>
+                <input
+                  id="investment-time"
+                  placeholder="1 ano"
+                  type="number"
+                />
+              </div>
+            </div>
+            <div
+              class="calculator-simulation-button-wrapper"
+            >
+              <button
+                disabled=""
+              >
+                Calcular
+                <img
+                  src="/src/assets/arrow_right_alt.svg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>,
+  "debug": [Function],
+  "emitted": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "html": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`CalculatorView should render correctly 1`] = `
+{
+  "baseElement": <body>
+    <div>
+      
+      <div
+        class="header-wrapper"
+      >
+        <div
+          class="header-logo-wrapper"
+        >
+          <img
+            src="/src/assets/logo-grupo-primo.svg"
+          />
+        </div>
+      </div>
+      <div>
+        <div
+          class="banner-wrapper"
+        >
+          <div
+            class="banner-content-wrapper"
+          >
+            <h1
+              class="banner-content-title"
+            >
+              Simulador de investimento
+            </h1>
+            <div
+              class="banner-content-description"
+            >
+              Descubra o quanto você pode economizar.
+            </div>
+          </div>
+        </div>
+        <div
+          class="calculator-simulation-component-wrapper"
+        >
+          <div
+            class="calculator-simulation-wrapper"
+          >
+            <div
+              class="calculator-simulation-container"
+            >
+              <div
+                class="calculator-simulation-title"
+              >
+                Simule agora
+              </div>
+              <div
+                class="calculator-simulation-description"
+              >
+                Faça uma comparação e comece a investir em uma experiência fácil e intuitiva:
+              </div>
+              <div
+                class="calculator-simulation-inputs-wrapper"
+              >
+                <div
+                  class="calculator-simulation-input-wrapper"
+                >
+                  <label
+                    for="initial-investment"
+                  >
+                     Investimento inicial 
+                  </label>
+                  <input
+                    id="initial-investment"
+                    placeholder="R$ 0,00"
+                    type="number"
+                  />
+                </div>
+                <div
+                  class="calculator-simulation-input-wrapper"
+                >
+                  <label
+                    for="monthly-investment"
+                  >
+                     Investimento mensal 
+                  </label>
+                  <input
+                    id="monthly-investment"
+                    placeholder="R$ 0,00"
+                    type="number"
+                  />
+                </div>
+                <div
+                  class="calculator-simulation-input-wrapper"
+                >
+                  <label
+                    for="investment-time"
+                  >
+                     Quanto tempo deixaria seu dinheiro investido? 
+                  </label>
+                  <input
+                    id="investment-time"
+                    placeholder="1 ano"
+                    type="number"
+                  />
+                </div>
+              </div>
+              <div
+                class="calculator-simulation-button-wrapper"
+              >
+                <button
+                  disabled=""
+                >
+                  Calcular
+                  <img
+                    src="/src/assets/arrow_right_alt.svg"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>,
+  "container": <div>
+    
+    <div
+      class="header-wrapper"
+    >
+      <div
+        class="header-logo-wrapper"
+      >
+        <img
+          src="/src/assets/logo-grupo-primo.svg"
+        />
+      </div>
+    </div>
+    <div>
+      <div
+        class="banner-wrapper"
+      >
+        <div
+          class="banner-content-wrapper"
+        >
+          <h1
+            class="banner-content-title"
+          >
+            Simulador de investimento
+          </h1>
+          <div
+            class="banner-content-description"
+          >
+            Descubra o quanto você pode economizar.
+          </div>
+        </div>
+      </div>
+      <div
+        class="calculator-simulation-component-wrapper"
+      >
+        <div
+          class="calculator-simulation-wrapper"
+        >
+          <div
+            class="calculator-simulation-container"
+          >
+            <div
+              class="calculator-simulation-title"
+            >
+              Simule agora
+            </div>
+            <div
+              class="calculator-simulation-description"
+            >
+              Faça uma comparação e comece a investir em uma experiência fácil e intuitiva:
+            </div>
+            <div
+              class="calculator-simulation-inputs-wrapper"
+            >
+              <div
+                class="calculator-simulation-input-wrapper"
+              >
+                <label
+                  for="initial-investment"
+                >
+                   Investimento inicial 
+                </label>
+                <input
+                  id="initial-investment"
+                  placeholder="R$ 0,00"
+                  type="number"
+                />
+              </div>
+              <div
+                class="calculator-simulation-input-wrapper"
+              >
+                <label
+                  for="monthly-investment"
+                >
+                   Investimento mensal 
+                </label>
+                <input
+                  id="monthly-investment"
+                  placeholder="R$ 0,00"
+                  type="number"
+                />
+              </div>
+              <div
+                class="calculator-simulation-input-wrapper"
+              >
+                <label
+                  for="investment-time"
+                >
+                   Quanto tempo deixaria seu dinheiro investido? 
+                </label>
+                <input
+                  id="investment-time"
+                  placeholder="1 ano"
+                  type="number"
+                />
+              </div>
+            </div>
+            <div
+              class="calculator-simulation-button-wrapper"
+            >
+              <button
+                disabled=""
+              >
+                Calcular
+                <img
+                  src="/src/assets/arrow_right_alt.svg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>,
+  "debug": [Function],
+  "emitted": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "html": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

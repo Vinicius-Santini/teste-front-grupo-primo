@@ -1,0 +1,605 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CalculatorResult should render correctly 1`] = `
+{
+  "baseElement": <body>
+    <div>
+      <div
+        class="calculator-result-wrapper"
+      >
+        <div
+          class="calculator-result-container"
+        >
+          <h1
+            class="calculator-result-title"
+          >
+             Resultado: 
+          </h1>
+          <h2
+            class="calculator-result-period"
+          >
+             Em 24 meses você teria: 
+          </h2>
+          <div
+            class="calculator-result-card-wrapper"
+          >
+            <div
+              class="calculator-result-card-container"
+            >
+              <!--v-if-->
+              <h3
+                class="calculator-result-card-title"
+              >
+                TAXA SELIC
+              </h3>
+              <div
+                class="calculator-result-card-value"
+                data-testid="profitability-result-element"
+              >
+                R$ 5.000,00
+              </div>
+            </div>
+          </div>
+          <div
+            class="calculator-result-card-wrapper"
+          >
+            <div
+              class="calculator-result-card-container"
+            >
+              <img
+                aria-label="logo-arca.svg"
+                class="calculator-result-card-logo"
+                src="file:///C:/src/assets/logo-arca.svg"
+              />
+              <h3
+                class="calculator-result-card-title"
+              >
+                FUNDO ARCA
+              </h3>
+              <div
+                class="calculator-result-card-value"
+                data-testid="profitability-result-element"
+              >
+                R$ 6.000,00
+              </div>
+            </div>
+          </div>
+          <div
+            class="divider"
+          />
+          <div
+            class="calculator-result-rates-wrapper"
+          >
+            <div
+              class="calculator-result-rate-content"
+            >
+              <div
+                class="calculator-result-rate-name"
+              >
+                TAXA SELIC:
+              </div>
+              <div
+                class="calculator-result-rate-value"
+              >
+                9.25%
+              </div>
+            </div>
+            <div
+              class="calculator-result-rate-content"
+            >
+              <div
+                class="calculator-result-rate-name"
+              >
+                RENTABILIDADE DO ARCA:
+              </div>
+              <div
+                class="calculator-result-rate-value"
+              >
+                18% a.a.
+              </div>
+            </div>
+          </div>
+          <div
+            class="calculator-result-help-wrapper"
+          >
+            <div
+              class="calculator-result-help-content"
+            >
+              <img
+                class=""
+                src="/src/assets/help.svg"
+              />
+              <div
+                class="calculator-result-help-info"
+              >
+                Valores utilizados no simulador de investimentos (referentes à data de última atualização - esses valores podem alterar de acordo com o mercado):
+              </div>
+            </div>
+            <div
+              class="calculator-result-help-date"
+            >
+              - Data da última atualização: 10/01/2024
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="calculator-result-wrapper"
+    >
+      <div
+        class="calculator-result-container"
+      >
+        <h1
+          class="calculator-result-title"
+        >
+           Resultado: 
+        </h1>
+        <h2
+          class="calculator-result-period"
+        >
+           Em 24 meses você teria: 
+        </h2>
+        <div
+          class="calculator-result-card-wrapper"
+        >
+          <div
+            class="calculator-result-card-container"
+          >
+            <!--v-if-->
+            <h3
+              class="calculator-result-card-title"
+            >
+              TAXA SELIC
+            </h3>
+            <div
+              class="calculator-result-card-value"
+              data-testid="profitability-result-element"
+            >
+              R$ 5.000,00
+            </div>
+          </div>
+        </div>
+        <div
+          class="calculator-result-card-wrapper"
+        >
+          <div
+            class="calculator-result-card-container"
+          >
+            <img
+              aria-label="logo-arca.svg"
+              class="calculator-result-card-logo"
+              src="file:///C:/src/assets/logo-arca.svg"
+            />
+            <h3
+              class="calculator-result-card-title"
+            >
+              FUNDO ARCA
+            </h3>
+            <div
+              class="calculator-result-card-value"
+              data-testid="profitability-result-element"
+            >
+              R$ 6.000,00
+            </div>
+          </div>
+        </div>
+        <div
+          class="divider"
+        />
+        <div
+          class="calculator-result-rates-wrapper"
+        >
+          <div
+            class="calculator-result-rate-content"
+          >
+            <div
+              class="calculator-result-rate-name"
+            >
+              TAXA SELIC:
+            </div>
+            <div
+              class="calculator-result-rate-value"
+            >
+              9.25%
+            </div>
+          </div>
+          <div
+            class="calculator-result-rate-content"
+          >
+            <div
+              class="calculator-result-rate-name"
+            >
+              RENTABILIDADE DO ARCA:
+            </div>
+            <div
+              class="calculator-result-rate-value"
+            >
+              18% a.a.
+            </div>
+          </div>
+        </div>
+        <div
+          class="calculator-result-help-wrapper"
+        >
+          <div
+            class="calculator-result-help-content"
+          >
+            <img
+              class=""
+              src="/src/assets/help.svg"
+            />
+            <div
+              class="calculator-result-help-info"
+            >
+              Valores utilizados no simulador de investimentos (referentes à data de última atualização - esses valores podem alterar de acordo com o mercado):
+            </div>
+          </div>
+          <div
+            class="calculator-result-help-date"
+          >
+            - Data da última atualização: 10/01/2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "emitted": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "html": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Result should render correctly 1`] = `
+{
+  "baseElement": <body>
+    <div>
+      <div
+        class="calculator-result-wrapper"
+      >
+        <div
+          class="calculator-result-container"
+        >
+          <h1
+            class="calculator-result-title"
+          >
+             Resultado: 
+          </h1>
+          <h2
+            class="calculator-result-period"
+          >
+             Em 24 meses você teria: 
+          </h2>
+          <div
+            class="calculator-result-card-wrapper"
+          >
+            <div
+              class="calculator-result-card-container"
+            >
+              <!--v-if-->
+              <h3
+                class="calculator-result-card-title"
+              >
+                TAXA SELIC
+              </h3>
+              <div
+                class="calculator-result-card-value"
+                data-testid="profitability-result-element"
+              >
+                R$ 5.000,00
+              </div>
+            </div>
+          </div>
+          <div
+            class="calculator-result-card-wrapper"
+          >
+            <div
+              class="calculator-result-card-container"
+            >
+              <img
+                aria-label="logo-arca.svg"
+                class="calculator-result-card-logo"
+                src="file:///C:/src/assets/logo-arca.svg"
+              />
+              <h3
+                class="calculator-result-card-title"
+              >
+                FUNDO ARCA
+              </h3>
+              <div
+                class="calculator-result-card-value"
+                data-testid="profitability-result-element"
+              >
+                R$ 6.000,00
+              </div>
+            </div>
+          </div>
+          <div
+            class="divider"
+          />
+          <div
+            class="calculator-result-rates-wrapper"
+          >
+            <div
+              class="calculator-result-rate-content"
+            >
+              <div
+                class="calculator-result-rate-name"
+              >
+                TAXA SELIC:
+              </div>
+              <div
+                class="calculator-result-rate-value"
+              >
+                9.25%
+              </div>
+            </div>
+            <div
+              class="calculator-result-rate-content"
+            >
+              <div
+                class="calculator-result-rate-name"
+              >
+                RENTABILIDADE DO ARCA:
+              </div>
+              <div
+                class="calculator-result-rate-value"
+              >
+                18% a.a.
+              </div>
+            </div>
+          </div>
+          <div
+            class="calculator-result-help-wrapper"
+          >
+            <div
+              class="calculator-result-help-content"
+            >
+              <img
+                class=""
+                src="/src/assets/help.svg"
+              />
+              <div
+                class="calculator-result-help-info"
+              >
+                Valores utilizados no simulador de investimentos (referentes à data de última atualização - esses valores podem alterar de acordo com o mercado):
+              </div>
+            </div>
+            <div
+              class="calculator-result-help-date"
+            >
+              - Data da última atualização: 10/01/2024
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="calculator-result-wrapper"
+    >
+      <div
+        class="calculator-result-container"
+      >
+        <h1
+          class="calculator-result-title"
+        >
+           Resultado: 
+        </h1>
+        <h2
+          class="calculator-result-period"
+        >
+           Em 24 meses você teria: 
+        </h2>
+        <div
+          class="calculator-result-card-wrapper"
+        >
+          <div
+            class="calculator-result-card-container"
+          >
+            <!--v-if-->
+            <h3
+              class="calculator-result-card-title"
+            >
+              TAXA SELIC
+            </h3>
+            <div
+              class="calculator-result-card-value"
+              data-testid="profitability-result-element"
+            >
+              R$ 5.000,00
+            </div>
+          </div>
+        </div>
+        <div
+          class="calculator-result-card-wrapper"
+        >
+          <div
+            class="calculator-result-card-container"
+          >
+            <img
+              aria-label="logo-arca.svg"
+              class="calculator-result-card-logo"
+              src="file:///C:/src/assets/logo-arca.svg"
+            />
+            <h3
+              class="calculator-result-card-title"
+            >
+              FUNDO ARCA
+            </h3>
+            <div
+              class="calculator-result-card-value"
+              data-testid="profitability-result-element"
+            >
+              R$ 6.000,00
+            </div>
+          </div>
+        </div>
+        <div
+          class="divider"
+        />
+        <div
+          class="calculator-result-rates-wrapper"
+        >
+          <div
+            class="calculator-result-rate-content"
+          >
+            <div
+              class="calculator-result-rate-name"
+            >
+              TAXA SELIC:
+            </div>
+            <div
+              class="calculator-result-rate-value"
+            >
+              9.25%
+            </div>
+          </div>
+          <div
+            class="calculator-result-rate-content"
+          >
+            <div
+              class="calculator-result-rate-name"
+            >
+              RENTABILIDADE DO ARCA:
+            </div>
+            <div
+              class="calculator-result-rate-value"
+            >
+              18% a.a.
+            </div>
+          </div>
+        </div>
+        <div
+          class="calculator-result-help-wrapper"
+        >
+          <div
+            class="calculator-result-help-content"
+          >
+            <img
+              class=""
+              src="/src/assets/help.svg"
+            />
+            <div
+              class="calculator-result-help-info"
+            >
+              Valores utilizados no simulador de investimentos (referentes à data de última atualização - esses valores podem alterar de acordo com o mercado):
+            </div>
+          </div>
+          <div
+            class="calculator-result-help-date"
+          >
+            - Data da última atualização: 10/01/2024
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "emitted": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "html": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

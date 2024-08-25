@@ -16,9 +16,9 @@ const props = defineProps({
             <h1 class="calculator-result-title">
                 Resultado:
             </h1>
-            <div class="calculator-result-period">
+            <h2 class="calculator-result-period">
                 Em {{ investmentPeriod }} meses você teria:
-            </div>
+            </h2>
             <CalculatorResultCard title="TAXA SELIC" :profitability=selicProfitability />
             <CalculatorResultCard logoPath="logo-arca.svg" title="FUNDO ARCA" :profitability=arcaProfitability />
             <div class="divider"></div>
