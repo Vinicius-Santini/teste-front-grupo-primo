@@ -48,9 +48,9 @@ const calculatorBannerDescription = "Descubra o quanto você pode economizar."
     @media (max-width: 1024px) {
         width: 100%;
         min-height: 728px;
+        padding: 4vh 0 18vh 0;
         display: flex;
         justify-content: center;
-        padding: 4vh 0 18vh 0;
     }
 }
 

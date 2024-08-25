@@ -1,5 +1,4 @@
 <script setup>
-
 const initialInvestment = defineModel('initialInvestment')
 const monthlyInvestment = defineModel('monthlyInvestment')
 const investmentTime = defineModel('investmentTime')
