@@ -1,6 +1,6 @@
 # Calculadora de Investimentos
 
-![ViteVue-GoogleChrome2024-08-2519-32-59-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1d4fd045-0530-4705-a4e4-277f5528f26f)
+![ViteVue-GoogleChrome2024-08-2519-32-59-ezgif com-crop](https://github.com/user-attachments/assets/0234a2e7-7a41-4311-bca5-e0b687c20ba1)
 
 ## Como rodar o projeto
 
