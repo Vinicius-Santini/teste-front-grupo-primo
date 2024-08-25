@@ -23,9 +23,11 @@ src/
 ├── utils/
 └── views/
 ```
+
 **`assets/`**
 
 Diretório destinado a armazenar recursos estáticos, como imagens e logos, que são utilizados na aplicação. Este diretório serve como um ponto centralizado para esses arquivos, facilitando o acesso e a manutenção.
+
 
 **`components/`**
 
@@ -39,9 +41,11 @@ Diretório que contém todos os componentes Vue da aplicação. A abordagem util
 * **Componentes filhos:** Devem ter como prefixo o nome do componente pai, seguido do seu nome específico (e.g., CalculatorResultCard).
 * **Estrutura de nomes:** Iniciar o nome com as palavras mais gerais e terminar com as específicas.
 
+
 **`helpers/`**
 
 Contém funções utilitárias que podem ser reutilizadas em várias partes do projeto. Atualmente, todas as funções estão em um único arquivo `index.js`. Conforme o projeto cresce, é recomendado dividir essas funções em diferentes arquivos para melhor organização.
+
 
 **`tests/`**
 
@@ -54,8 +58,10 @@ Diretório onde estão localizados todos os testes da aplicação. A estrutura �
 
 Todos os arquivos de teste seguem o padrão de extensão `.test.js`.
 
+
 **`utils/`**
 Diretório que armazena elementos utilitários, como constantes ou funções auxiliares. Por exemplo, o arquivo `yieldRates.js` que armazena taxas de rendimento usadas em vários pontos do projeto.
+
 
 **`views/`**
 Contém as páginas da aplicação. Cada página é um componente Vue (.vue) e deve terminar com o sufixo `View` para diferenciá-la de outros componentes (e.g., `CalculatorView.vue`).
