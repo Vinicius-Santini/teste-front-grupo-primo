@@ -1,4 +1,4 @@
-# Calculadora de Investimentos - VueJs
+# Calculadora de Investimentos - Vue3 - CompositionAPI 
 
 ### Como rodar:
 Para rodar este projeto basta utilizar o comando `$ npm install` para instalar as dependências e o comando `$ npm run dev` para rodar a aplicação em modo de desenvolvimento.
