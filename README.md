@@ -17,7 +17,7 @@ A pasta **assets** serve para guardar imagens, logos e derivados que são utiliz
 
 ### components
 A pasta **components** é um diretório 'flat', ou seja, possui todos os componentes do projeto diretamente em sua raiz, a nomenclatura destes componentes seguem alguns padrões:
-* Os componentes devem ser nomeado usando PascalCase
+* Os componentes devem ser nomeados usando PascalCase
 * Componentes que podem ser reutilizados em toda aplicação devem ter seu nome iniciado com `App`
 * Os nomes do componentes devem sempre ser compostos de mútiplas palavras, evitando conflitos com elementos HTML presentes ou futuros
 * Componentes filhos devem ter como prefixo o nome do componente pai. Exemplo: `CalculatorResult` e `CalculatorResultCard`
