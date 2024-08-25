@@ -29,9 +29,12 @@ A pasta **helpers** tem funções que recebem e devolvem um valor e podem vir a 
 mas conforme um projeto vai expandindo seria ideal separar estas funções em diferentes arquivos js.
 
 ### tests
-Como o nome sugere, na **tests** estão todos os testes da aplicação, os testes funcionais ficam na raiz da pasta e levam o nome da funcionalidade que estão testando, como por exemplo `Calculator.test.js`, 
-dentro da pasta components estão os testes unitários dos componentes, os arquivos levam o nome do respectivo componente sendo testado (`CalculatorSimulation.test.js`), dentro da pasta helpers estão os testes unitários dos helpers, os arquivos recebem o nome igual ao arquivo helperr sendo testado, como `index.test.js` e por fim na pasta interface estão os testes de snapshot, os arquivos levam o nome do respectivo componente sendo testado (`CalculatorSimulation.test.js`). 
-(Todos arquivos de testes devem ser `.test.js`)
+Como o nome sugere, na **tests** estão todos os testes da aplicação.
+* Os testes funcionais ficam na raiz da pasta e levam o nome da funcionalidade que estão testando, como por exemplo `Calculator.test.js`
+* Dentro da pasta components estão os testes unitários dos componentes, os arquivos levam o nome do respectivo componente sendo testado (`CalculatorSimulation.test.js`)
+* Dentro da pasta helpers estão os testes unitários dos helpers, os arquivos recebem o nome igual ao arquivo helper sendo testado, como `index.test.js` 
+* Na pasta interface estão os testes de snapshot, os arquivos levam o nome do respectivo componente sendo testado (`CalculatorSimulation.test.js`).
+* Todos arquivos de testes devem ser `.test.js`
 
 ### utils
 A **utils** carrega alguns elementos utilitários que auxiliam no desenvolvimento, como é o caso do arquivo `yieldRates.js` que guarda em consts as taxas utilizadas em alguns pontos do projeto.
