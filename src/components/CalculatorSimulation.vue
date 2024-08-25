@@ -79,6 +79,7 @@ const emit = defineEmits(['send-simulation-data'])
         padding: 4vh 0 4vh 0;
 
         @media (max-width: 1024px) {
+            width: 85%;
             height: 94%;
             padding: 0px;
         }
@@ -154,9 +155,9 @@ const emit = defineEmits(['send-simulation-data'])
                         font-size: 1.375rem;
 
                         @media (max-width: 1024px) {
-                            width: 100%;
+                            width: 96%;
                             margin-bottom: 32px;
-                            padding-left: 0px;
+                            padding-left: 10px;
                         }
                     }
 
@@ -210,8 +211,12 @@ const emit = defineEmits(['send-simulation-data'])
                 font-weight: 600;
                 font-size: 1.5625rem;
 
-                @media (max-width: 1024px) {
+                @media (max-width: 767px) {
                     width: 100%;
+                }
+
+                @media (max-width: 1024px) {
+                    width: 98%;
                     margin-right: 0px;
                 }
 

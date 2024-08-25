@@ -30,9 +30,9 @@ input {
     font-size: 1.375rem;
 
     @media (max-width: 1024px) {
-        width: 100%;
+        width: 96%;
         margin-bottom: 32px;
-        padding-left: 0px;
+        padding-left: 10px;
     }
 }
 </style>

@@ -34,7 +34,6 @@ exports[`CalculatorResult should render correctly 1`] = `
               </h3>
               <div
                 class="calculator-result-card-value"
-                data-testid="profitability-result-element"
               >
                 R$ 5.000,00
               </div>
@@ -58,7 +57,6 @@ exports[`CalculatorResult should render correctly 1`] = `
               </h3>
               <div
                 class="calculator-result-card-value"
-                data-testid="profitability-result-element"
               >
                 R$ 6.000,00
               </div>
@@ -156,7 +154,6 @@ exports[`CalculatorResult should render correctly 1`] = `
             </h3>
             <div
               class="calculator-result-card-value"
-              data-testid="profitability-result-element"
             >
               R$ 5.000,00
             </div>
@@ -180,7 +177,6 @@ exports[`CalculatorResult should render correctly 1`] = `
             </h3>
             <div
               class="calculator-result-card-value"
-              data-testid="profitability-result-element"
             >
               R$ 6.000,00
             </div>
