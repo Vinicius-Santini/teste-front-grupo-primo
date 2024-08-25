@@ -1,5 +1,7 @@
 # Calculadora de Investimentos
 
+![ViteVue-GoogleChrome2024-08-2519-32-59-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/1d4fd045-0530-4705-a4e4-277f5528f26f)
+
 ![teste-front-grupo-primo](https://github.com/user-attachments/assets/2e2abee7-2865-4351-a9df-6133f4c1fb3c)
 
 ## Como rodar o projeto
