@@ -6,8 +6,7 @@ const monthlyInvestment = defineModel('monthlyInvestment')
 const investmentTime = defineModel('investmentTime')
 
 function calculateSpanDistance() {
-    const spanBaseDistance = window.innerWidth > 1024 ? 20 : 10
-    return spanBaseDistance + (12 * investmentTime.value.toString().length) + 'px'
+    return 20 + (12 * investmentTime.value.toString().length) + 'px'
 }
 
 const emit = defineEmits(['send-simulation-data'])
@@ -150,10 +149,6 @@ const emit = defineEmits(['send-simulation-data'])
                         color: var(--primary-text-color);
                         font-size: 1.375rem;
                         top: 14px;
-
-                        @media (max-width: 1024px) {
-                            left: 20px;
-                        }
                     }
 
                 }
