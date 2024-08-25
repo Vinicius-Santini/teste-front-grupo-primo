@@ -40,4 +40,4 @@ Como o nome sugere, na **tests** estão todos os testes da aplicação.
 A **utils** carrega alguns elementos utilitários que auxiliam no desenvolvimento, como é o caso do arquivo `yieldRates.js` que guarda em consts as taxas utilizadas em alguns pontos do projeto.
 
 ### views
-No diretório **views** estão as páginas da aplicação.
+No diretório **views** estão as páginas da aplicação. As páginas são arquivos `.vue` e devem sempre receber o sufixo `View`.
