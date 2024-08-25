@@ -1,4 +1,3 @@
-# Calculadora de Investimentos - Vue3 - CompositionAPI 
 # Calculadora de Investimentos
 
 ## Como rodar o projeto
