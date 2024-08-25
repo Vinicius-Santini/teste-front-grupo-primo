@@ -60,8 +60,10 @@ Todos os arquivos de teste seguem o padrão de extensão `.test.js`.
 
 
 **`utils/`**
+
 Diretório que armazena elementos utilitários, como constantes ou funções auxiliares. Por exemplo, o arquivo `yieldRates.js` que armazena taxas de rendimento usadas em vários pontos do projeto.
 
 
 **`views/`**
+
 Contém as páginas da aplicação. Cada página é um componente Vue (.vue) e deve terminar com o sufixo `View` para diferenciá-la de outros componentes (e.g., `CalculatorView.vue`).
