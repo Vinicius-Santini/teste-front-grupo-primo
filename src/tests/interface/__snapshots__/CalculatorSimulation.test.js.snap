@@ -24,7 +24,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
             class="calculator-simulation-inputs-wrapper"
           >
             <div
-              class="calculator-simulation-input-wrapper"
+              class="calculator-simulation-inputs-content"
             >
               <label
                 for="initial-investment"
@@ -38,7 +38,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
               />
             </div>
             <div
-              class="calculator-simulation-input-wrapper"
+              class="calculator-simulation-inputs-content"
             >
               <label
                 for="monthly-investment"
@@ -52,7 +52,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
               />
             </div>
             <div
-              class="calculator-simulation-input-wrapper"
+              class="calculator-simulation-inputs-content"
             >
               <label
                 for="investment-time"
@@ -60,7 +60,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
                  Quanto tempo deixaria seu dinheiro investido? 
               </label>
               <div
-                class="calculator-simulation-input-time-wrapper"
+                class="calculator-simulation-inputs-content-time-input-wrapper"
               >
                 <input
                   id="investment-time"
@@ -108,7 +108,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
           class="calculator-simulation-inputs-wrapper"
         >
           <div
-            class="calculator-simulation-input-wrapper"
+            class="calculator-simulation-inputs-content"
           >
             <label
               for="initial-investment"
@@ -122,7 +122,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
             />
           </div>
           <div
-            class="calculator-simulation-input-wrapper"
+            class="calculator-simulation-inputs-content"
           >
             <label
               for="monthly-investment"
@@ -136,7 +136,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
             />
           </div>
           <div
-            class="calculator-simulation-input-wrapper"
+            class="calculator-simulation-inputs-content"
           >
             <label
               for="investment-time"
@@ -144,7 +144,7 @@ exports[`CalculatorSimulation should render correctly 1`] = `
                Quanto tempo deixaria seu dinheiro investido? 
             </label>
             <div
-              class="calculator-simulation-input-time-wrapper"
+              class="calculator-simulation-inputs-content-time-input-wrapper"
             >
               <input
                 id="investment-time"
