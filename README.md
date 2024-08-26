@@ -63,3 +63,10 @@ Diretório que armazena elementos utilitários, como constantes ou funções aux
 **`views/`**
 
 Contém as páginas da aplicação. Cada página é um componente Vue (.vue) e deve terminar com o sufixo `View` para diferenciá-la de outros componentes (e.g., `CalculatorView.vue`).
+
+## Techs
+
+* Vue3 (Composition API)
+* JavaScript
+* Vue Testing Library
+  
