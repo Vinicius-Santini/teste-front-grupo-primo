@@ -5,5 +5,5 @@ import AppCurrencyInput from "../../components/AppCurrencyInput.vue";
 test("AppCurrencyInput should render correctly", () => {
     const appCurrencyInput = render(AppCurrencyInput)
 
-    expect(AppCurrencyInput).toMatchSnapshot();
+    expect(appCurrencyInput).toMatchSnapshot();
 })
