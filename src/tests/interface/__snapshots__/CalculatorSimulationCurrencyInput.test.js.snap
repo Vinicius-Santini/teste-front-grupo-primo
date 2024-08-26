@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`CalculatorSimulationCurrencyInput should render correctly 1`] = `
+exports[`AppCurrencyInput should render correctly 1`] = `
 {
   "baseElement": <body>
     <div>

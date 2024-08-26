@@ -1,5 +1,5 @@
 <script setup>
-import CalculatorSimulationCurrencyInput from './CalculatorSimulationCurrencyInput.vue';
+import AppCurrencyInput from './AppCurrencyInput.vue';
 
 const initialInvestment = defineModel('initialInvestment')
 const monthlyInvestment = defineModel('monthlyInvestment')
@@ -24,13 +24,13 @@ const emit = defineEmits(['send-simulation-data'])
                     <label for="initial-investment">
                         Investimento inicial
                     </label>
-                    <CalculatorSimulationCurrencyInput id="initial-investment" v-model="initialInvestment" />
+                    <AppCurrencyInput id="initial-investment" v-model="initialInvestment" />
                 </div>
                 <div class="calculator-simulation-inputs-content">
                     <label for="monthly-investment">
                         Investimento mensal
                     </label>
-                    <CalculatorSimulationCurrencyInput id="monthly-investment" v-model="monthlyInvestment" />
+                    <AppCurrencyInput id="monthly-investment" v-model="monthlyInvestment" />
                 </div>
                 <div class="calculator-simulation-inputs-content">
                     <label for="investment-time">

@@ -1,0 +1,16 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppCurrencyInput should render correctly 1`] = `
+{
+  "__file": "C:/Users/vinic/Desktop/Projeto/teste-front-grupo-primo/src/components/AppCurrencyInput.vue",
+  "__name": "AppCurrencyInput",
+  "emits": [
+    "update:modelValue",
+  ],
+  "props": [
+    "modelValue",
+  ],
+  "render": [Function],
+  "setup": [Function],
+}
+`;
