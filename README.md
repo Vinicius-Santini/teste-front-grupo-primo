@@ -1,5 +1,5 @@
 # Calculadora de Investimentos
-Este projeto se trata de uma calculadora de investimos, desenvolvida utilizando Vue3 (CompositionAPI), javascript e vue-testing-library.
+Este projeto se trata de uma calculadora de investimentos, desenvolvida utilizando Vue3 (CompositionAPI), javascript e vue-testing-library.
 
 ![ViteVue-GoogleChrome2024-08-2519-32-59-ezgif com-crop](https://github.com/user-attachments/assets/0234a2e7-7a41-4311-bca5-e0b687c20ba1)
 
