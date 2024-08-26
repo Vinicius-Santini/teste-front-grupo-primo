@@ -127,10 +127,10 @@ const emit = defineEmits(['send-simulation-data'])
                 label {
                     font-size: 1.375rem;
                     padding-bottom: 8px;
-                    max-width: 80%;
 
                     @media (max-width: 1440px) {
                         font-size: 1rem;
+                        max-width: 80%;
                     }
                 }
 
