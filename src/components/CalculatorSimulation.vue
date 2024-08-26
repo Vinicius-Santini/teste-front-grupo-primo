@@ -193,9 +193,10 @@ const emit = defineEmits(['send-simulation-data'])
 
                 @media (max-width: 767px) {
                     width: 100%;
+                    margin-right: 0px;
                 }
 
-                @media (max-width: 1024px) {
+                @media (min-width: 768px) and (max-width: 1024px) {
                     width: 98%;
                     margin-right: 0px;
                 }
