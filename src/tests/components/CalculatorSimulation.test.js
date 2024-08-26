@@ -135,3 +135,27 @@ test("Calculate button should be disabled if both main investment and monthly in
 
     expect(calculateButton).toBeDisabled();
 });
+
+test("Calculate button should be disabled if all fields are not filled", async () => {
+    const user = userEvent.setup();
+
+    render(CalculatorSimulation);
+
+    const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
+
+    await user.clear(initialInvestmentInput);
+
+    const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
+
+    await user.clear(monthlyInvestmentInput);
+
+    const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
+
+    await user.clear(investmentTimeInput);
+
+    const calculateButton = await screen.getByRole("button", {
+        name: /calcular/i
+    });
+
+    expect(calculateButton).toBeDisabled();
+});
