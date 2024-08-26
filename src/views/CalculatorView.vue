@@ -1,13 +1,13 @@
 <script setup>
 import { ref } from 'vue';
 
+import { calculateInvestment } from '../helpers';
+import { selic, arca } from "../utils/yieldRates.js"
+
 import AppHeader from "../components/AppHeader.vue"
 import AppBanner from "../components/AppBanner.vue"
 import CalculatorSimulation from "../components/CalculatorSimulation.vue"
 import CalculatorResult from "../components/CalculatorResult.vue"
-
-import { calculateInvestment } from '../helpers';
-import { selic, arca } from "../utils/yieldRates.js"
 
 const selicProfitability = ref(null);
 const arcaProfitability = ref(null);
