@@ -36,7 +36,7 @@ Diretório que contém todos os componentes Vue da aplicação. A abordagem util
 **Regras para nomenclatura de componentes:**
 
 * **PascalCase:** Os nomes dos componentes devem seguir o formato `PascalCase` (e.g., `CalculatorResult`).
-* **Componentes reutilizáveis:** Devem começar com `App` (e.g., `AppButton`), sinalizando que são reutilizáveis em várias partes do projeto.
+* **Componentes reutilizáveis:** Devem começar com `App` (e.g., `AppBanner`), sinalizando que são reutilizáveis em várias partes do projeto.
 * **Nomes compostos:** Sempre usar nomes compostos para evitar conflitos com elementos HTML nativos ou futuros.
 * **Componentes filhos:** Devem ter como prefixo o nome do componente pai, seguido do seu nome específico (e.g., `CalculatorResultCard`).
 * **Estrutura de nomes:** Iniciar o nome com as palavras mais gerais e terminar com as específicas.
