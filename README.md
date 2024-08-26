@@ -8,7 +8,7 @@
    - Execute o comando `$ npm install` para instalar todas as dependências necessárias.
 
 2. **Modo de desenvolvimento**:
-   - Use o comando `$ npm run dev` para iniciar a aplicação em modo de desenvolvimento. Isso geralmente inicia um servidor local onde você pode visualizar a aplicação em tempo real enquanto desenvolve.
+   - Use o comando `$ npm run dev` para iniciar a aplicação em modo de desenvolvimento.
 
 3. **Rodando testes**:
    - Para executar os testes, utilize o comando `$ npm run test`.
