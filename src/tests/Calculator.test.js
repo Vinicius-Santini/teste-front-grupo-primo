@@ -128,7 +128,7 @@ test("Simulation not filling out any field should not render result", async () =
     expect(resultHeading).not.toBeInTheDocument();
 });
 
-test("Simulation not filling out main investment and monthly investment should not render result", async () => {
+test("Simulation not filling out initial investment and monthly investment should not render result", async () => {
     const user = userEvent.setup();
 
     render(App);
