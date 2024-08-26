@@ -51,7 +51,6 @@ test("Simulation not filling out just monthly investment for happy path", async 
 
     await user.clear(monthlyInvestmentInput);
 
-
     const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
 
     await user.clear(investmentTimeInput);
@@ -69,7 +68,7 @@ test("Simulation not filling out just monthly investment for happy path", async 
     expect(arcaProfitabilityElement).toBeInTheDocument();
 });
 
-test("Simulation not filling out just main investment for happy path", async () => {
+test("Simulation not filling out just initial investment for happy path", async () => {
     const user = userEvent.setup();
 
     render(App);
@@ -101,7 +100,7 @@ test("Simulation not filling out just main investment for happy path", async () 
     expect(arcaProfitabilityElement).toBeInTheDocument();
 });
 
-test("Simulation not filling out investment time should not render result", async () => {
+test("Simulation not filling out any field should not render result", async () => {
     const user = userEvent.setup();
 
     render(App);
@@ -124,12 +123,41 @@ test("Simulation not filling out investment time should not render result", asyn
     await user.click(calculateButton);
 
     const resultHeading = screen.queryByRole("heading", {
-        name: "Resultado"
+        name: "Resultado:"
     });
     expect(resultHeading).not.toBeInTheDocument();
 });
 
 test("Simulation not filling out main investment and monthly investment should not render result", async () => {
+    const user = userEvent.setup();
+
+    render(App);
+
+    const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
+
+    await user.clear(initialInvestmentInput);
+
+    const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
+
+    await user.clear(monthlyInvestmentInput);
+
+    const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
+
+    await user.clear(investmentTimeInput);
+    await user.type(investmentTimeInput, "2");
+
+    const calculateButton = await screen.getByRole("button", {
+        name: /calcular/i
+    });
+    await user.click(calculateButton);
+
+    const resultHeading = screen.queryByRole("heading", {
+        name: "Resultado:"
+    });
+    expect(resultHeading).not.toBeInTheDocument();
+});
+
+test("Simulation not filling out just investment time should not render result", async () => {
     const user = userEvent.setup();
 
     render(App);
@@ -144,10 +172,10 @@ test("Simulation not filling out main investment and monthly investment should n
     await user.clear(monthlyInvestmentInput);
     await user.type(monthlyInvestmentInput, "20000");
 
+
     const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
 
     await user.clear(investmentTimeInput);
-    await user.type(investmentTimeInput, "2");
 
     const calculateButton = await screen.getByRole("button", {
         name: /calcular/i
@@ -155,7 +183,7 @@ test("Simulation not filling out main investment and monthly investment should n
     await user.click(calculateButton);
 
     const resultHeading = screen.queryByRole("heading", {
-        name: "Resultado"
+        name: "Resultado:"
     });
     expect(resultHeading).not.toBeInTheDocument();
 });
