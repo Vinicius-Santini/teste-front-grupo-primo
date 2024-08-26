@@ -55,7 +55,6 @@ const emit = defineEmits(['send-simulation-data'])
 
 <style>
 .calculator-simulation-wrapper {
-    min-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +118,6 @@ const emit = defineEmits(['send-simulation-data'])
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                justify-content: center;
 
                 @media (max-width: 1024px) {
                     width: 100%;
@@ -129,6 +127,7 @@ const emit = defineEmits(['send-simulation-data'])
                 label {
                     font-size: 1.375rem;
                     padding-bottom: 8px;
+                    max-width: 80%;
 
                     @media (max-width: 1440px) {
                         font-size: 1rem;

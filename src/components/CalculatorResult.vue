@@ -47,7 +47,6 @@ const props = defineProps({
 
 <style>
 .calculator-result-wrapper {
-    min-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
