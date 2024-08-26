@@ -113,7 +113,7 @@ exports[`App should render correctly 1`] = `
                 >
                   Calcular
                   <img
-                    src="/src/assets/arrow_right_alt.svg"
+                    src="/src/assets/arrow-right-alt.svg"
                   />
                 </button>
               </div>
@@ -234,7 +234,7 @@ exports[`App should render correctly 1`] = `
               >
                 Calcular
                 <img
-                  src="/src/assets/arrow_right_alt.svg"
+                  src="/src/assets/arrow-right-alt.svg"
                 />
               </button>
             </div>
