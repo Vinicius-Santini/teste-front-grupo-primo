@@ -111,7 +111,7 @@ test("Calculate button should be disabled if only investment time is not filled"
     expect(calculateButton).toBeDisabled();
 });
 
-test("Calculate button should be disabled if both main investment and monthly investment is not filled", async () => {
+test("Calculate button should be disabled if both main investment and monthly investment are not filled", async () => {
     const user = userEvent.setup();
 
     render(CalculatorSimulation);

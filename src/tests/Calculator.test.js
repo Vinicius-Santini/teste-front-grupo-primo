@@ -109,6 +109,34 @@ test("Simulation not filling out investment time should not render result", asyn
     const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
 
     await user.clear(initialInvestmentInput);
+
+    const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
+
+    await user.clear(monthlyInvestmentInput);
+
+    const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
+
+    await user.clear(investmentTimeInput);
+
+    const calculateButton = await screen.getByRole("button", {
+        name: /calcular/i
+    });
+    await user.click(calculateButton);
+
+    const resultHeading = screen.queryByRole("heading", {
+        name: "Resultado"
+    });
+    expect(resultHeading).not.toBeInTheDocument();
+});
+
+test("Simulation not filling out main investment and monthly investment should not render result", async () => {
+    const user = userEvent.setup();
+
+    render(App);
+
+    const initialInvestmentInput = await screen.findByLabelText("Investimento inicial");
+
+    await user.clear(initialInvestmentInput);
     await user.type(initialInvestmentInput, "100000");
 
     const monthlyInvestmentInput = await screen.findByLabelText("Investimento mensal");
@@ -119,6 +147,7 @@ test("Simulation not filling out investment time should not render result", asyn
     const investmentTimeInput = await screen.findByLabelText("Quanto tempo deixaria seu dinheiro investido?");
 
     await user.clear(investmentTimeInput);
+    await user.type(investmentTimeInput, "2");
 
     const calculateButton = await screen.getByRole("button", {
         name: /calcular/i

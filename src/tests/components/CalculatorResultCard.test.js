@@ -2,21 +2,16 @@ import { test, expect } from "vitest";
 import { render, screen } from "@testing-library/vue";
 import CalculatorResultCard from "../../components/CalculatorResultCard.vue";
 
-test("Card should render heading with the name passed in title prop", async () => {
+test("Card should render heading and profitability with the values passed in props", async () => {
     render(CalculatorResultCard, { props: { title: "TAXA SELIC", profitability: 5000.0 } });
 
     const cardHeading = await screen.getByRole("heading", {
         name: "TAXA SELIC"
     });
-
-    expect(cardHeading).toBeInTheDocument();
-});
-
-test("Card should render profitability with the value passed in profitability prop as BRL", async () => {
-    render(CalculatorResultCard, { props: { title: "TAXA SELIC", profitability: 5000.0 } });
-
     const profitabilityElement = screen.getByText("R$ 5.000,00");
+
     expect(profitabilityElement).toBeInTheDocument();
+    expect(cardHeading).toBeInTheDocument();
 });
 
 test("Card should render img element if logoPath prop is passed", async () => {
