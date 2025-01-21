@@ -33,7 +33,7 @@ Directory intended to store static resources, such as images and logos, used in 
 
 Directory containing all Vue components of the application. The approach used here is a 'flat' directory, meaning there are no subfolders for components, making navigation and organization easier.
 
-**Regras para nomenclatura de componentes:**
+**Component Naming Rules:**
 
 * **PascalCase:** Component names must follow the `PascalCase` format (e.g., `CalculatorResult`).
 * **Reusable components:** Must start with `App` (e.g., `AppBanner`), indicating that they are reusable across different parts of the project.
