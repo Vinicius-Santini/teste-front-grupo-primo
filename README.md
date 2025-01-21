@@ -1,19 +1,19 @@
-# Calculadora de Investimentos
+# Investment Calculator
 
 ![ViteVue-GoogleChrome2024-08-2519-32-59-ezgif com-crop](https://github.com/user-attachments/assets/0234a2e7-7a41-4311-bca5-e0b687c20ba1)
 
-## Como rodar o projeto
+## How to run
 
-1. **Instalação de dependências**:
-   - Execute o comando `$ npm install` para instalar todas as dependências necessárias.
+1. **Installing Dependencies**:
+   - Run the command `$ npm install` to install all necessary dependencies.
 
-2. **Modo de desenvolvimento**:
-   - Use o comando `$ npm run dev` para iniciar a aplicação em modo de desenvolvimento.
+2. **Development Mode**:
+   - Use `$ npm run dev` to start the application in development mode.
 
-3. **Rodando testes**:
-   - Para executar os testes, utilize o comando `$ npm run test`.
+3. **Running Tests**:
+   - To run the tests, use `$ npm run test`.
 
-## Estrutura do Projeto
+## Project Structure
 
 ```plaintext
 src/
@@ -27,39 +27,39 @@ src/
 ```
 **`assets/`**
 
-Diretório destinado a armazenar recursos estáticos, como imagens e logos, que são utilizados na aplicação. Este diretório serve como um ponto centralizado para esses arquivos, facilitando o acesso e a manutenção.
+Directory intended to store static resources, such as images and logos, used in the application. This directory serves as a centralized point for these files, making access and maintenance easier.
 
 **`components/`**
 
-Diretório que contém todos os componentes Vue da aplicação. A abordagem utilizada aqui é a de um diretório 'flat', ou seja, sem subpastas para componentes, facilitando a navegação e organização.
+Directory containing all Vue components of the application. The approach used here is a 'flat' directory, meaning there are no subfolders for components, making navigation and organization easier.
 
 **Regras para nomenclatura de componentes:**
 
-* **PascalCase:** Os nomes dos componentes devem seguir o formato `PascalCase` (e.g., `CalculatorResult`).
-* **Componentes reutilizáveis:** Devem começar com `App` (e.g., `AppBanner`), sinalizando que são reutilizáveis em várias partes do projeto.
-* **Nomes compostos:** Sempre usar nomes compostos para evitar conflitos com elementos HTML nativos ou futuros.
-* **Componentes filhos:** Devem ter como prefixo o nome do componente pai, seguido do seu nome específico (e.g., `CalculatorResultCard`).
-* **Estrutura de nomes:** Iniciar o nome com as palavras mais gerais e terminar com as específicas.
+* **PascalCase:** Component names must follow the `PascalCase` format (e.g., `CalculatorResult`).
+* **Reusable components:** Must start with `App` (e.g., `AppBanner`), indicating that they are reusable across different parts of the project.
+* **Compound names:** Always use compound names to avoid conflicts with native HTML elements or future ones..
+* **Child components:** Must be prefixed with the parent component’s name, followed by its specific name (e.g., `CalculatorResultCard`).
+* **Naming structure:** Start the name with the most general words and end with the most specific ones.
 
 **`helpers/`**
 
-Contém funções utilitárias que podem ser reutilizadas em várias partes do projeto. Atualmente, todas as funções estão em um único arquivo `index.js`. Conforme o projeto cresce, é recomendado dividir essas funções em diferentes arquivos para melhor organização.
+Contains utility functions that can be reused in various parts of the project. Currently, all functions are in a single `index.js` file. As the project grows, it is recommended to split these functions into different files for better organization.
 
 **`tests/`**
 
-Diretório onde estão localizados todos os testes da aplicação. A estrutura é segmentada para facilitar o entendimento:
+Directory where all application tests are located. The structure is segmented to improve clarity:
 
-* **Testes funcionais:** Estão na raiz da pasta e recebem o nome da funcionalidade que estão testando, como `Calculator.test.js`.
-* **Testes de componentes:** Estão na subpasta components, com nomes correspondentes ao componente testado (e.g., `CalculatorSimulation.test.js`).
-* **Testes de helpers:** Estão na subpasta helpers, e o nome do arquivo é o mesmo do helper que está sendo testado (e.g., `index.test.js`).
-* **Testes de snapshot:** Estão na subpasta interface, também com o nome correspondente ao componente (e.g., `CalculatorSimulation.test.js`).
+* **Functional tests:** Located at the root of the folder and named after the feature being tested, such as `Calculator.test.js`.
+* **Component tests:** Stored in the components subfolder, with names matching the tested component (e.g., `CalculatorSimulation.test.js`).
+* **Helper tests:** Stored in the helpers subfolder, and the file name matches the tested helper (e.g., `index.test.js`).
+* **Snapshot tests:** Stored in the interface subfolder, also with names matching the component (e.g., `CalculatorSimulation.test.js`).
 
-Todos os arquivos de teste seguem o padrão de extensão `.test.js`.
+All test files follow the `.test.js` extension pattern.
 
 **`utils/`**
 
-Diretório que armazena elementos utilitários, como constantes ou funções auxiliares. Por exemplo, o arquivo `yieldRates.js` que armazena taxas de rendimento usadas em vários pontos do projeto.
+Directory that stores utility elements, such as constants or helper functions. For example, the `yieldRates.js` file stores yield rates used in various parts of the project.
 
 **`views/`**
 
-Contém as páginas da aplicação. Cada página é um componente Vue (.vue) e deve terminar com o sufixo `View` para diferenciá-la de outros componentes (e.g., `CalculatorView.vue`).
+Contains the application pages. Each page is a Vue component (.vue) and must end with the `View` suffix to differentiate it from other components (e.g., `CalculatorView.vue`).
